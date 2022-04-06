@@ -8,7 +8,7 @@
       <link href="styles/style.css" rel="stylesheet">
    </head>
    <body>
-     <!-- Nav bar  -->
+      <!-- Nav bar  -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">The Best Hotel Chain</a>
@@ -36,22 +36,25 @@
       <div class="container-lg">
          <br>
          <div class="col-md-10 offset-md-1">
-           <!-- Form inside container -->
+            <!-- Form inside container -->
             <form action= "#" method="post">
-              <!-- form introduction -->
-               <h2> The Best Hotel Chain Form </h2>
+               <!-- form introduction -->
+               <h2> The Best Hotel Chain </h2>
                <p> The best hotel for your destination rest-ination. </p>
                <hr>
                <hr>
                <!-- form inputs -->
+               <!-- Text input -->
                <div class="mb-3">
                   <label for="username" class="form-label">Full Name</label>
                   <input type="text" class="form-control" id="username" placeholder="Full Name" >
                </div>
+               <!-- Number input -->
                <div class="mb-3">
                   <label for="phone" class="form-label">Phone Number</label>
                   <input type="tel" class="form-control" id="phone" placeholder="123-456-7890" >
                </div>
+               <!-- Date inputs -->
                <div class ="row">
                   <div class="col-sm-5">
                      <div class="mb-3">
@@ -68,6 +71,7 @@
                      </div>
                   </div>
                </div>
+               <!-- Email / password inputs -->
                <div class="mb-3">
                   <label for="email" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="email"  placeholder="email@email.com" aria-describedby="emailHelp">
@@ -77,22 +81,42 @@
                   <label for="password" class="form-label">Password</label>
                   <input type="password" class="form-control" id="password" placeholder="**********">
                </div>
+               <!-- Password remember check -->
                <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1" >
                   <label class="form-check-label" for="exampleCheck1">Remember Password</label>
                </div>
+               <!-- Radio input -->
                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <input class="form-check-input" type="radio" name="radioDefault" id="return" value="return">
                   <label class="form-check-label" for="flexRadioDefault1">
                   Returning customer
                   </label>
                </div>
                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <input class="form-check-input" type="radio" name="radioDefault" id="first" value="first">
                   <label class="form-check-label" for="flexRadioDefault2">
                   First time customer
                   </label>
-               </div> 
+                  <br><br>
+               </div>
+               <!-- Inputs that are default hidden based on radio check -->
+               <!-- Range check based on radio return checked -->
+               <div id="againTime" name="againTime">
+                  <label for="customRange3" class="form-label">Rate your last visit</label>
+                  <pre class="tab4">Unsatisfactory                                    Average                                                    Highly Satisfactory</pre>
+                  <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+               </div>
+               <!-- Select input based on radio first checked -->
+               <div name ="firstTime" id="firstTime" class="mb-3">
+                  <label for="hear" class="form-label">How did you hear about us?</label>
+                  <select name="hear" id="hear">
+                     <option value="internet">Internet</option>
+                     <option value="magazine">Magazine</option>
+                     <option value="tv">TV Ad</option>
+                     <option value="other">Other</option>
+                  </select>
+               </div>
                <br>
                <!-- buttons to clear and submit -->
                <button type="submit" class="btn btn-primary">submit</button>
@@ -102,9 +126,9 @@
          <br>
       </div>
       <!-- scripts -->
-      <script src="scripts/script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" ></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+      <script src="scripts/script.js"></script>
    </body>
 </html>
